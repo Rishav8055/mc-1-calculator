@@ -4,24 +4,31 @@ public class MathematicalCalculator {
 
 	public int add(int num1, int num2)
 	{	
-		return -1;
+		return num1+num2;
 	}
 	public int subtract(int num1, int num2)
 	{	
-		return -2;
+		return num1-num2;
 	}
 	public int multiply(int num1, int num2)
 	{	
-		return -1;
+		return num1*num2;
 	}
 	public int divide(int num1, int num2)
 	{
 		//write the code and handle the ArithmeticException
-         return -1;
+		try {
+			int remainder=num1/num2;
+			return remainder;
+		}catch (ArithmeticException exception){
+			int remainder=0;
+			return remainder;
+		}
+
 
 	}
 	public int modulo(int num1, int num2)
 	{	
-		return-1;
+		return num1%num2;
 	}
 }
